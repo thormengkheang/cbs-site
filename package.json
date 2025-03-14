@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pretty": "prettier -w 'src/**/*.{ts,tsx}'"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
@@ -28,6 +29,8 @@
     "eslint": "^9",
     "eslint-config-next": "15.2.2",
     "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "3",
     "typescript": "^5"
   }
