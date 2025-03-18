@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import { Ref } from "react";
 
 export const Exhibitors = ({ ref }: { ref: Ref<HTMLElement> }) => {
@@ -44,9 +45,11 @@ export const Exhibitors = ({ ref }: { ref: Ref<HTMLElement> }) => {
           ))}
         </div>
         <div className="mt-12 text-center">
-          <Button className="rounded-full border-0 bg-white/10 px-6 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-white/20">
-            View Floor Plan
-          </Button>
+          <Link href="/exhibitors">
+            <Button className="rounded-full border-0 bg-white/10 px-6 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-white/20">
+              View Floor Plan
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

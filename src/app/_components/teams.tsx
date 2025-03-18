@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Facebook, Github, Globe, Linkedin, Mail, Twitter } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { Ref } from "react";
 
 export const Teams = ({ ref }: { ref?: Ref<HTMLElement> }) => {
@@ -17,8 +18,8 @@ export const Teams = ({ ref }: { ref?: Ref<HTMLElement> }) => {
           </p>
         </div>
 
-        {/* Team Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {/* Team Grid - Core Team Only */}
+        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           {/* Team Member 1 - Event Director */}
           <div className="group">
             <div className="relative overflow-hidden rounded-xl bg-white/5 p-5 transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(120,80,255,0.3)]">
@@ -158,204 +159,14 @@ export const Teams = ({ ref }: { ref?: Ref<HTMLElement> }) => {
               </div>
             </div>
           </div>
-
-          {/* Team Member 4 - Partnerships Manager */}
-          <div className="group">
-            <div className="relative overflow-hidden rounded-xl bg-white/5 p-5 transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(120,80,255,0.3)]">
-              <div className="relative z-10">
-                <div className="mb-4 overflow-hidden rounded-lg">
-                  <Image
-                    src="/placeholder.svg?height=300&width=300"
-                    alt="Alex Kim"
-                    width={300}
-                    height={300}
-                    className="h-[200px] w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <h3 className="text-xl font-bold">Alex Kim</h3>
-                <p className="mb-2 text-sm text-purple-400">
-                  Partnerships Manager
-                </p>
-                <p className="mb-4 text-sm text-gray-400">
-                  Connecting businesses and building strategic relationships in
-                  the blockchain ecosystem.
-                </p>
-                <div className="flex space-x-3">
-                  <a
-                    href="#"
-                    className="text-gray-400 transition-colors hover:text-purple-400"
-                  >
-                    <Twitter className="h-4 w-4" />
-                    <span className="sr-only">Twitter</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="text-gray-400 transition-colors hover:text-purple-400"
-                  >
-                    <Linkedin className="h-4 w-4" />
-                    <span className="sr-only">LinkedIn</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="text-gray-400 transition-colors hover:text-purple-400"
-                  >
-                    <Mail className="h-4 w-4" />
-                    <span className="sr-only">Email</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Team Member 5 - Content Curator */}
-          <div className="group sm:col-span-2 md:col-span-1">
-            <div className="relative overflow-hidden rounded-xl bg-white/5 p-5 transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(120,80,255,0.3)]">
-              <div className="relative z-10">
-                <div className="mb-4 overflow-hidden rounded-lg">
-                  <Image
-                    src="/placeholder.svg?height=300&width=300"
-                    alt="Lina Prak"
-                    width={300}
-                    height={300}
-                    className="h-[200px] w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <h3 className="text-xl font-bold">Lina Prak</h3>
-                <p className="mb-2 text-sm text-purple-400">Content Curator</p>
-                <p className="mb-4 text-sm text-gray-400">
-                  Researcher and writer specializing in blockchain technology
-                  and cryptocurrency trends.
-                </p>
-                <div className="flex space-x-3">
-                  <a
-                    href="#"
-                    className="text-gray-400 transition-colors hover:text-purple-400"
-                  >
-                    <Twitter className="h-4 w-4" />
-                    <span className="sr-only">Twitter</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="text-gray-400 transition-colors hover:text-purple-400"
-                  >
-                    <Globe className="h-4 w-4" />
-                    <span className="sr-only">Website</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="text-gray-400 transition-colors hover:text-purple-400"
-                  >
-                    <Mail className="h-4 w-4" />
-                    <span className="sr-only">Email</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Team Member 6 - Operations Manager */}
-          <div className="group sm:col-span-2 md:col-span-1">
-            <div className="relative overflow-hidden rounded-xl bg-white/5 p-5 transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(120,80,255,0.3)]">
-              <div className="relative z-10">
-                <div className="mb-4 overflow-hidden rounded-lg">
-                  <Image
-                    src="/placeholder.svg?height=300&width=300"
-                    alt="Michael Tan"
-                    width={300}
-                    height={300}
-                    className="h-[200px] w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <h3 className="text-xl font-bold">Michael Tan</h3>
-                <p className="mb-2 text-sm text-purple-400">
-                  Operations Manager
-                </p>
-                <p className="mb-4 text-sm text-gray-400">
-                  Logistics expert ensuring seamless execution of events and
-                  exceptional attendee experiences.
-                </p>
-                <div className="flex space-x-3">
-                  <a
-                    href="#"
-                    className="text-gray-400 transition-colors hover:text-purple-400"
-                  >
-                    <Linkedin className="h-4 w-4" />
-                    <span className="sr-only">LinkedIn</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="text-gray-400 transition-colors hover:text-purple-400"
-                  >
-                    <Mail className="h-4 w-4" />
-                    <span className="sr-only">Email</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Team Member 7 - Community Manager */}
-          <div className="group">
-            <div className="relative overflow-hidden rounded-xl bg-white/5 p-5 transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(120,80,255,0.3)]">
-              <div className="relative z-10">
-                <div className="mb-4 overflow-hidden rounded-lg">
-                  <Image
-                    src="/placeholder.svg?height=300&width=300"
-                    alt="Michael Tan"
-                    width={300}
-                    height={300}
-                    className="h-[200px] w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <h3 className="text-xl font-bold">Samnang Chhay</h3>
-                <p className="mb-2 text-sm text-purple-400">
-                  Community Manager
-                </p>
-                <p className="mb-4 line-clamp-3 text-sm text-gray-400">
-                  Building and nurturing the blockchain community in Cambodia
-                  through education and engagement. Passionate about making
-                  blockchain technology accessible to everyone and fostering
-                  local talent.
-                </p>
-                <div className="flex space-x-3">
-                  <a
-                    href="#"
-                    className="text-gray-400 transition-colors hover:text-purple-400"
-                  >
-                    <Twitter className="h-4 w-4" />
-                    <span className="sr-only">Twitter</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="text-gray-400 transition-colors hover:text-purple-400"
-                  >
-                    <Linkedin className="h-4 w-4" />
-                    <span className="sr-only">LinkedIn</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="text-gray-400 transition-colors hover:text-purple-400"
-                  >
-                    <Facebook className="h-4 w-4" />
-                    <span className="sr-only">Facebook</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="text-gray-400 transition-colors hover:text-purple-400"
-                  >
-                    <Mail className="h-4 w-4" />
-                    <span className="sr-only">Email</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="mt-12 text-center">
-          <Button className="rounded-full border-0 bg-white/10 px-6 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-white/20">
-            Join Our Team
-          </Button>
+          <Link href="/teams">
+            <Button className="rounded-full border-0 bg-white/10 px-6 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-white/20">
+              Join Our Team
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
