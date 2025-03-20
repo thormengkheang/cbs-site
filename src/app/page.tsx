@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { Footer } from "./_components/footer";
 import { LandingPageHeader } from "./_components/landing-page-header";
 import { Teams } from "./_components/teams";
-import { Contact } from "./_components/contact";
+// import { Contact } from "./_components/contact";
 import { Exhibitors } from "./_components/exhibitors";
 import { Sponsors } from "./_components/sponsors";
 import { Speakers } from "./_components/speakers";
@@ -66,7 +66,7 @@ export default function HomePage() {
       <Teams ref={teamsRef} />
 
       {/* Contact Section */}
-      <Contact ref={contactRef} />
+      {/* <Contact ref={contactRef} /> */}
 
       {/* Footer */}
       <Footer />

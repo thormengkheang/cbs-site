@@ -96,12 +96,12 @@ export const LandingPageHeader = (props: HeaderProps) => {
             >
               Teams
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection(sectionRefs.contact)}
               className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
             >
               Contact
-            </button>
+            </button> */}
             <Button
               size="sm"
               className="rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-4 text-sm font-medium text-white transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
@@ -164,12 +164,12 @@ export const LandingPageHeader = (props: HeaderProps) => {
             >
               Teams
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection(sectionRefs.contact)}
               className="py-2 text-sm font-medium text-gray-300 transition-colors hover:text-purple-300"
             >
               Contact
-            </button>
+            </button> */}
             <Button
               size="sm"
               className="w-full rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-4 text-sm font-medium text-white transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
