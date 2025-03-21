@@ -96,6 +96,12 @@ export const LandingPageHeader = (props: HeaderProps) => {
             >
               Teams
             </button>
+            <Link
+              href="/certificate"
+              className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
+            >
+              Certificate
+            </Link>
             {/* <button
               onClick={() => scrollToSection(sectionRefs.contact)}
               className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
@@ -164,6 +170,12 @@ export const LandingPageHeader = (props: HeaderProps) => {
             >
               Teams
             </button>
+            <Link
+              href="/certificate"
+              className="py-2 text-center text-sm font-medium text-gray-300 transition-colors hover:text-purple-300"
+            >
+              Certificate
+            </Link>
             {/* <button
               onClick={() => scrollToSection(sectionRefs.contact)}
               className="py-2 text-sm font-medium text-gray-300 transition-colors hover:text-purple-300"
