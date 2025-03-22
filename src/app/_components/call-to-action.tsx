@@ -1,7 +1,9 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { Calendar, MapPin } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export const CallToAction = () => {
@@ -11,7 +13,7 @@ export const CallToAction = () => {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("2025-06-15 09:00:00");
+    const target = new Date("2025-03-30 08:00:00");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -66,20 +68,26 @@ export const CallToAction = () => {
           <div className="flex flex-col justify-center gap-4 pt-4 sm:flex-row">
             <div className="flex items-center gap-2">
               <Calendar className="h-5 w-5 text-purple-400" />
-              <span className="text-gray-300">June 15-17, 2025</span>
+              <span className="text-gray-300">March 30, 2025</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5 text-purple-400" />
-              <span className="text-gray-300">Phnom Penh, Cambodia</span>
+              <span className="text-gray-300">
+                National University of Management
+              </span>
             </div>
           </div>
 
-          <Button
-            size="lg"
-            className="rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-8 py-6 text-lg font-medium text-white shadow-[0_0_15px_rgba(120,80,255,0.5)] transition-all duration-300 hover:from-purple-700 hover:to-blue-700 hover:shadow-[0_0_25px_rgba(120,80,255,0.7)]"
+          <Link
+            href="https://www.bookme.plus/t/events/cbs2025"
+            target="_blank"
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-8 py-6 text-lg font-medium text-white shadow-[0_0_15px_rgba(120,80,255,0.5)] transition-all duration-300 hover:from-purple-700 hover:to-blue-700 hover:shadow-[0_0_25px_rgba(120,80,255,0.7)]"
+            )}
           >
             Register Now
-          </Button>
+          </Link>
         </div>
       </div>
     </section>
