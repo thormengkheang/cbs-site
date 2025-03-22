@@ -23,7 +23,7 @@ export const About = ({ ref }: { ref: Ref<HTMLElement> }) => {
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-purple-400" />
                 <span className="text-gray-300">
-                  National University of Management, Phnom Penh, Cambodia
+                  National University of Management
                 </span>
               </div>
             </div>
