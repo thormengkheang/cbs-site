@@ -108,12 +108,12 @@ export const LandingPageHeader = (props: HeaderProps) => {
             >
               Contact
             </button> */}
-            <Button
-              size="sm"
+            <Link
+              href="https://www.bookme.plus/t/events/cbs2025"
               className="rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-4 text-sm font-medium text-white transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
             >
               Register
-            </Button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -182,12 +182,13 @@ export const LandingPageHeader = (props: HeaderProps) => {
             >
               Contact
             </button> */}
-            <Button
+            <Link
+              href="https://www.bookme.plus/t/events/cbs2025"
               size="sm"
               className="w-full rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-4 text-sm font-medium text-white transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
             >
               Register
-            </Button>
+            </Link>
           </div>
         </div>
       )}
