@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Download, ExternalLink, MapPin } from "lucide-react";
 import { Footer } from "../_components/footer";
 import { PageHeader } from "../_components/page-header";
-import { exhibitorPackages, exhibitors } from "@/data/exhibitors";
+import { exhibitors } from "@/data/exhibitors";
 
 export default function ExhibitorsPage() {
   return (
@@ -99,7 +99,7 @@ export default function ExhibitorsPage() {
         </section>
 
         {/* Become an Exhibitor */}
-        <section className="mb-16 mt-20">
+        {/* <section className="mb-16 mt-20">
           <div className="mx-auto max-w-4xl rounded-xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
             <h2 className="mb-6 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-center text-3xl font-bold text-transparent">
               Become an Exhibitor
@@ -151,7 +151,7 @@ export default function ExhibitorsPage() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       {/* Footer */}
