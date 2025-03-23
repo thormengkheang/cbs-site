@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Network } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 import { Ref } from "react";
 import Image from "next/image";
 
@@ -33,8 +33,14 @@ export const About = ({ ref }: { ref: Ref<HTMLElement> }) => {
           </div>
           <div className="relative h-64 w-64 md:h-80 md:w-80">
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 opacity-20 blur-2xl"></div>
-            <div className="relative flex h-full w-full items-center justify-center">              
-              <img src="/CBS_Logo.png" alt="Cambodia Blockchain Summit logo" className="h-32 w-32  md:h-40 md:w-40"/>
+            <div className="relative flex h-full w-full items-center justify-center">
+              <Image
+                src="/logo.png"
+                width={128}
+                height={128}
+                alt="Cambodia Blockchain Summit logo"
+                className="h-32 w-32 md:h-40 md:w-40"
+              />
             </div>
           </div>
         </div>
