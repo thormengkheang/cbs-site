@@ -1,10 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Menu, Network, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import image from "next/image";
 import { RefObject, useEffect, useState } from "react";
+import { Logo } from "./logo";
 
 interface SectionRefs {
   about: RefObject<HTMLElement | null>;
@@ -52,16 +52,7 @@ export const LandingPageHeader = (props: HeaderProps) => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-16 items-center justify-between md:h-20">
-          <Link href="/" className="flex items-center gap-2">
-          <div className="flex items-center gap-4">
-  <img src="/CBS_Logo.png" alt="Cambodia Blockchain Summit Logo" className="h-10 w-10" />
-  <div className="text-white leading-tight">
-    <h1 className="text-sm font-medium tracking-widest">CAMBODIA</h1>
-    <h2 className="text-xl font-bold tracking-wide">BLOCKCHAIN</h2>
-    <h1 className="text-sm font-medium tracking-widest">SUMMIT</h1>
-  </div>
-</div>
-          </Link>
+          <Logo />
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-6 md:flex">
