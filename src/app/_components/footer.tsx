@@ -1,6 +1,6 @@
-import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Youtube} from "lucide-react";
 import Link from "next/link";
-
+import siteConfig from "@/site.config";
 export const Footer = () => {
   return (
     <footer className="border-t border-white/10 py-12">
@@ -17,37 +17,50 @@ export const Footer = () => {
           </div>
           <div className="flex flex-col gap-4 md:items-end">
             <div className="flex gap-4">
+              
               <Link
-                href="#"
-                className="text-gray-400 transition-colors hover:text-purple-400"
-              >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
-                href="#"
+                href={siteConfig.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 transition-colors hover:text-purple-400"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
+
               <Link
-                href="#"
+                href={siteConfig.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 transition-colors hover:text-purple-400"
               >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
+
               <Link
-                href="#"
+                href={siteConfig.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 transition-colors hover:text-purple-400"
               >
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
               </Link>
+
+              <Link
+                href={siteConfig.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 transition-colors hover:text-purple-400"
+              >
+                <Youtube className="h-5 w-5" />
+                <span className="sr-only">YouTube</span>
+              </Link>
+
             </div>
             <div className="text-gray-400">
-              <p>Contact: info@cambodiablockchain.com</p>
+              <p>Contact: {siteConfig.email}</p>
             </div>
           </div>
         </div>
