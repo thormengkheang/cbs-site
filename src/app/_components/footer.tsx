@@ -1,5 +1,21 @@
-import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import Link from "next/link";
+import siteConfig from "@/site.config";
+
+const TikTokIcon = ({ className = "h-5 w-5" }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
 
 export const Footer = () => {
   return (
@@ -18,36 +34,56 @@ export const Footer = () => {
           <div className="flex flex-col gap-4 md:items-end">
             <div className="flex gap-4">
               <Link
-                href="#"
-                className="text-gray-400 transition-colors hover:text-purple-400"
-              >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
-                href="#"
+                href={siteConfig.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 transition-colors hover:text-purple-400"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
+
               <Link
-                href="#"
+                href={siteConfig.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 transition-colors hover:text-purple-400"
               >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
+
               <Link
-                href="#"
+                href={siteConfig.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 transition-colors hover:text-purple-400"
               >
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
+              </Link>
+
+              <Link
+                href={siteConfig.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 transition-colors hover:text-purple-400"
+              >
+                <Youtube className="h-5 w-5" />
+                <span className="sr-only">YouTube</span>
+              </Link>
+              <Link
+                href={siteConfig.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 transition-colors hover:text-purple-400"
+              >
+                <TikTokIcon />
+                <span className="sr-only">TikTok</span>
               </Link>
             </div>
             <div className="text-gray-400">
-              <p>Contact: info@cambodiablockchain.com</p>
+              <p>Contact: {siteConfig.email}</p>
             </div>
           </div>
         </div>
