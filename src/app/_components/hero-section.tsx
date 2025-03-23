@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import Link from 'next/link'
 
 export const HeroSection = () => {
   return (
@@ -15,12 +16,12 @@ export const HeroSection = () => {
               opportunities in blockchain.
             </p>
           </div>
-          <Button
-            size="lg"
+          <Link 
+            href="https://www.bookme.plus/t/events/cbs2025"
             className="rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-8 py-6 text-lg font-medium text-white shadow-[0_0_15px_rgba(120,80,255,0.5)] transition-all duration-300 hover:from-purple-700 hover:to-blue-700 hover:shadow-[0_0_25px_rgba(120,80,255,0.7)]"
           >
             Register Now
-          </Button>
+          </Link>
         </div>
       </div>
 
