@@ -1,6 +1,22 @@
-import { Facebook, Instagram, Linkedin, Youtube} from "lucide-react";
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import Link from "next/link";
 import siteConfig from "@/site.config";
+
+const TikTokIcon = ({ className = "h-5 w-5" }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
+
 export const Footer = () => {
   return (
     <footer className="border-t border-white/10 py-12">
@@ -17,7 +33,6 @@ export const Footer = () => {
           </div>
           <div className="flex flex-col gap-4 md:items-end">
             <div className="flex gap-4">
-              
               <Link
                 href={siteConfig.linkedin}
                 target="_blank"
@@ -57,7 +72,15 @@ export const Footer = () => {
                 <Youtube className="h-5 w-5" />
                 <span className="sr-only">YouTube</span>
               </Link>
-
+              <Link
+                href={siteConfig.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 transition-colors hover:text-purple-400"
+              >
+                <TikTokIcon />
+                <span className="sr-only">TikTok</span>
+              </Link>
             </div>
             <div className="text-gray-400">
               <p>Contact: {siteConfig.email}</p>
