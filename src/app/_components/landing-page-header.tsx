@@ -1,9 +1,8 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import { Menu, Network, X } from "lucide-react";
-import Link from "next/link";
 import { RefObject, useEffect, useState } from "react";
+import Link from 'next/link'
 
 interface SectionRefs {
   about: RefObject<HTMLElement | null>;
@@ -110,6 +109,7 @@ export const LandingPageHeader = (props: HeaderProps) => {
             </button> */}
             <Link
               href="https://www.bookme.plus/t/events/cbs2025"
+              target="_blank"
               className="rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-4 text-sm font-medium text-white transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
             >
               Register
@@ -184,7 +184,7 @@ export const LandingPageHeader = (props: HeaderProps) => {
             </button> */}
             <Link
               href="https://www.bookme.plus/t/events/cbs2025"
-              size="sm"
+              target="_blank"
               className="w-full rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-4 text-sm font-medium text-white transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
             >
               Register
