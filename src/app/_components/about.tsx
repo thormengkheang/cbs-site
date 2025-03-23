@@ -18,11 +18,13 @@ export const About = ({ ref }: { ref: Ref<HTMLElement> }) => {
             <div className="flex flex-col gap-4 pt-4 sm:flex-row">
               <div className="flex items-center gap-2">
                 <Calendar className="h-5 w-5 text-purple-400" />
-                <span className="text-gray-300">June 15-17, 2025</span>
+                <span className="text-gray-300">March 30, 2025</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-purple-400" />
-                <span className="text-gray-300">Phnom Penh, Cambodia</span>
+                <span className="text-gray-300">
+                  National University of Management
+                </span>
               </div>
             </div>
           </div>

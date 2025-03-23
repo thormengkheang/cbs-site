@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Menu, Network, X } from "lucide-react";
+import Link from "next/link";
 import { RefObject, useEffect, useState } from "react";
 
 interface SectionRefs {
@@ -18,7 +19,7 @@ interface HeaderProps {
   sectionRefs: SectionRefs;
 }
 
-export const Header = (props: HeaderProps) => {
+export const LandingPageHeader = (props: HeaderProps) => {
   const { sectionRefs } = props;
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -50,12 +51,12 @@ export const Header = (props: HeaderProps) => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-16 items-center justify-between md:h-20">
-          <div className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <Network className="h-6 w-6 text-purple-400" />
             <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-lg font-bold text-transparent md:text-xl">
               CBS 2025
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-6 md:flex">
@@ -95,12 +96,18 @@ export const Header = (props: HeaderProps) => {
             >
               Teams
             </button>
-            <button
+            <Link
+              href="/certificate"
+              className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
+            >
+              Certificate
+            </Link>
+            {/* <button
               onClick={() => scrollToSection(sectionRefs.contact)}
               className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
             >
               Contact
-            </button>
+            </button> */}
             <Button
               size="sm"
               className="rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-4 text-sm font-medium text-white transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
@@ -163,12 +170,18 @@ export const Header = (props: HeaderProps) => {
             >
               Teams
             </button>
-            <button
+            <Link
+              href="/certificate"
+              className="py-2 text-center text-sm font-medium text-gray-300 transition-colors hover:text-purple-300"
+            >
+              Certificate
+            </Link>
+            {/* <button
               onClick={() => scrollToSection(sectionRefs.contact)}
               className="py-2 text-sm font-medium text-gray-300 transition-colors hover:text-purple-300"
             >
               Contact
-            </button>
+            </button> */}
             <Button
               size="sm"
               className="w-full rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-4 text-sm font-medium text-white transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
