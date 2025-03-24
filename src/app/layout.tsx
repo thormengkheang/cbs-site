@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "CBS 2025",
   description: "Cambodia Blockchain Summit 2025",
-  icons:[
+  icons: [
     {
       rel: "icon",
       type: "image/png",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       rel: "icon",
       type: "image/png",
       sizes: "16x16",
-      url:"/favicon-16x16.png",
+      url: "/favicon-16x16.png",
     },
     {
       rel: "apple-touch-icon",
