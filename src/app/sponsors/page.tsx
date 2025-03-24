@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Download, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import {
   platinumSponsors,
   goldSponsors,
@@ -12,6 +12,7 @@ import {
 } from "@/data/sponsors";
 import { PageHeader } from "../_components/page-header";
 import { Footer } from "../_components/footer";
+import siteConfig from "@/site.config";
 
 export default function SponsorsPage() {
   return (
@@ -158,24 +159,32 @@ export default function SponsorsPage() {
               in Southeast Asia.
             </p>
 
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {sponsorshipPackages.map((pkg) => (
                 <div
                   key={pkg.tier}
-                  className="rounded-lg border border-white/10 bg-white/5 p-6 transition-all duration-300 hover:border-purple-500/50 hover:shadow-[0_0_15px_rgba(120,80,255,0.3)]"
+                  className="flex flex-col justify-between rounded-lg border border-white/10 bg-white/5 p-6 transition-all duration-300 hover:border-purple-500/50 hover:shadow-[0_0_15px_rgba(120,80,255,0.3)]"
                 >
-                  <h3 className="mb-2 text-xl font-bold">{pkg.tier}</h3>
-                  <p className="mb-4 text-2xl font-bold text-purple-300">
-                    {pkg.price}
-                  </p>
-                  <ul className="mb-6 space-y-2 text-sm text-gray-300">
-                    {pkg.benefits.map((benefit, index) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <span className="mt-1 text-purple-400">•</span>
-                        <span>{benefit}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <div>
+                    <h3 className="mb-2 text-xl font-bold">{pkg.tier}</h3>
+                    <p className="mb-4 text-2xl font-bold text-purple-300">
+                      {pkg.price}
+                    </p>
+                    <ul className="mb-6 space-y-2 text-sm text-gray-300">
+                      {pkg.exclusiveBenefits.map((benefit, index) => (
+                        <li key={index} className="flex items-start gap-2">
+                          <span className="mt-1 text-purple-400">•</span>
+                          <span>{benefit}</span>
+                        </li>
+                      ))}
+                      {pkg.benefits.map((benefit, index) => (
+                        <li key={index} className="flex items-start gap-2">
+                          <span className="mt-1 text-purple-400">•</span>
+                          <span>{benefit}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                   <Button className="w-full bg-white/10 text-white hover:bg-white/20">
                     Select
                   </Button>
@@ -184,17 +193,17 @@ export default function SponsorsPage() {
             </div>
 
             <div className="mt-10 text-center">
-              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:from-purple-700 hover:to-blue-700">
+              {/* <Button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:from-purple-700 hover:to-blue-700">
                 <Download className="mr-2 h-4 w-4" />
                 Download Sponsorship Prospectus
-              </Button>
+              </Button> */}
               <p className="mt-4 text-sm text-gray-400">
                 For custom sponsorship packages, please contact us at{" "}
                 <a
-                  href="mailto:sponsors@cambodiablockchain.com"
+                  href={`mailto:${siteConfig.email}`}
                   className="text-purple-400 hover:underline"
                 >
-                  sponsors@cambodiablockchain.com
+                  {siteConfig.email}
                 </a>
               </p>
             </div>
