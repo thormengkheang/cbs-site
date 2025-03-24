@@ -1,11 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { Twitter, Linkedin, Github, Globe, Mail, Facebook } from "lucide-react";
 import { PageHeader } from "../_components/page-header";
 import { Footer } from "../_components/footer";
-import { openPositions, teamMembers } from "@/data/teams";
+import { teamMembers } from "@/data/teams";
 
 export default function TeamsPage() {
   return (
@@ -743,7 +742,7 @@ export default function TeamsPage() {
         </section>
 
         {/* Join Our Team */}
-        <section className="mx-auto max-w-4xl rounded-xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+        {/* <section className="mx-auto max-w-4xl rounded-xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
           <h2 className="mb-6 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-center text-3xl font-bold text-transparent">
             Join Our Team
           </h2>
@@ -791,7 +790,7 @@ export default function TeamsPage() {
               Send Open Application
             </Button>
           </div>
-        </section>
+        </section> */}
       </main>
 
       {/* Footer */}

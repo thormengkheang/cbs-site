@@ -206,33 +206,33 @@ export const teamMembers = [
   },
 ];
 
-export const openPositions = [
-  {
-    title: "Blockchain Developer Advocate",
-    type: "Full-time",
-    location: "Phnom Penh, Cambodia",
-    description:
-      "We're looking for a passionate blockchain developer who can create educational content, lead workshops, and engage with the developer community.",
-  },
-  {
-    title: "Event Coordinator",
-    type: "Contract (6 months)",
-    location: "Phnom Penh, Cambodia",
-    description:
-      "Join our team to help coordinate various aspects of the Cambodia Blockchain Summit, from logistics to attendee experience.",
-  },
-  {
-    title: "Marketing Specialist",
-    type: "Full-time",
-    location: "Remote (Southeast Asia)",
-    description:
-      "Help us promote the Cambodia Blockchain Summit through digital marketing, social media, and community engagement.",
-  },
-  {
-    title: "Volunteer Coordinator",
-    type: "Part-time",
-    location: "Phnom Penh, Cambodia",
-    description:
-      "Manage our volunteer program, including recruitment, training, and coordination during the summit.",
-  },
-];
+// export const openPositions = [
+//   {
+//     title: "Blockchain Developer Advocate",
+//     type: "Full-time",
+//     location: "Phnom Penh, Cambodia",
+//     description:
+//       "We're looking for a passionate blockchain developer who can create educational content, lead workshops, and engage with the developer community.",
+//   },
+//   {
+//     title: "Event Coordinator",
+//     type: "Contract (6 months)",
+//     location: "Phnom Penh, Cambodia",
+//     description:
+//       "Join our team to help coordinate various aspects of the Cambodia Blockchain Summit, from logistics to attendee experience.",
+//   },
+//   {
+//     title: "Marketing Specialist",
+//     type: "Full-time",
+//     location: "Remote (Southeast Asia)",
+//     description:
+//       "Help us promote the Cambodia Blockchain Summit through digital marketing, social media, and community engagement.",
+//   },
+//   {
+//     title: "Volunteer Coordinator",
+//     type: "Part-time",
+//     location: "Phnom Penh, Cambodia",
+//     description:
+//       "Manage our volunteer program, including recruitment, training, and coordination during the summit.",
+//   },
+// ];

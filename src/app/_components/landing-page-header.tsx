@@ -1,9 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Menu, Network, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { RefObject, useEffect, useState } from "react";
+import { Logo } from "./logo";
 
 interface SectionRefs {
   about: RefObject<HTMLElement | null>;
@@ -51,12 +52,7 @@ export const LandingPageHeader = (props: HeaderProps) => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-16 items-center justify-between md:h-20">
-          <Link href="/" className="flex items-center gap-2">
-            <Network className="h-6 w-6 text-purple-400" />
-            <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-lg font-bold text-transparent md:text-xl">
-              CBS 2025
-            </span>
-          </Link>
+          <Logo />
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-6 md:flex">
@@ -108,12 +104,17 @@ export const LandingPageHeader = (props: HeaderProps) => {
             >
               Contact
             </button> */}
-            <Button
-              size="sm"
-              className="rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-4 text-sm font-medium text-white transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
+            <Link
+              href="https://www.bookme.plus/t/events/cbs2025"
+              target="_blank"
             >
-              Register
-            </Button>
+              <Button
+                size="sm"
+                className="rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-4 text-sm font-medium text-white transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
+              >
+                Register
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -182,12 +183,17 @@ export const LandingPageHeader = (props: HeaderProps) => {
             >
               Contact
             </button> */}
-            <Button
-              size="sm"
-              className="w-full rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-4 text-sm font-medium text-white transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
+            <Link
+              href="https://www.bookme.plus/t/events/cbs2025"
+              target="_blank"
             >
-              Register
-            </Button>
+              <Button
+                size="sm"
+                className="w-full rounded-full border-0 bg-gradient-to-r from-purple-600 to-blue-600 px-4 text-sm font-medium text-white transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
+              >
+                Register
+              </Button>
+            </Link>
           </div>
         </div>
       )}
