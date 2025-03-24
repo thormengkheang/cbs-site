@@ -164,7 +164,7 @@ export const Teams = ({ ref }: { ref?: Ref<HTMLElement> }) => {
         <div className="mt-12 text-center">
           <Link href="/teams">
             <Button className="rounded-full border-0 bg-white/10 px-6 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-white/20">
-              Join Our Team
+              View All Teams
             </Button>
           </Link>
         </div>

@@ -3,15 +3,15 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Search, Filter, Twitter, Linkedin, Globe } from "lucide-react";
+import { Search, Twitter, Linkedin, Globe } from "lucide-react";
 import { Input } from "@/components/ui/input";
-import { categories, speakers } from "@/data/speakers";
+import { speakers } from "@/data/speakers";
 import { PageHeader } from "../_components/page-header";
 import { Footer } from "../_components/footer";
 
 export default function SpeakersPage() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  // const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredSpeakers = speakers.filter((speaker) => {
     const matchesSearch =
@@ -19,11 +19,16 @@ export default function SpeakersPage() {
       speaker.role.toLowerCase().includes(searchQuery.toLowerCase()) ||
       speaker.company.toLowerCase().includes(searchQuery.toLowerCase());
 
-    const matchesCategory =
-      selectedCategory === "All" || speaker.category === selectedCategory;
+    // const matchesCategory =
+    //   selectedCategory === "All" || speaker.category === selectedCategory;
 
-    return matchesSearch && matchesCategory;
+    // return matchesSearch && matchesCategory;
+    return matchesSearch;
   });
+
+  const handleOnResetFilters = () => {
+    setSearchQuery("");
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-950 to-gray-900 text-white">
@@ -55,7 +60,7 @@ export default function SpeakersPage() {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
-            <div className="relative">
+            {/* <div className="relative">
               <Filter className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 transform text-gray-400" />
               <select
                 className="h-10 w-full appearance-none rounded-md border border-white/10 bg-white/5 px-3 pl-10 text-white focus:outline-none focus:ring-2 focus:ring-purple-500/50 md:w-48"
@@ -72,7 +77,7 @@ export default function SpeakersPage() {
                   </option>
                 ))}
               </select>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -91,9 +96,9 @@ export default function SpeakersPage() {
                       className="h-[200px] w-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
-                  <div className="mb-2 inline-block rounded-full bg-purple-900/50 px-3 py-1 text-xs font-medium text-purple-300">
+                  {/* <div className="mb-2 inline-block rounded-full bg-purple-900/50 px-3 py-1 text-xs font-medium text-purple-300">
                     {speaker.category}
-                  </div>
+                  </div> */}
                   <h3 className="text-xl font-bold">{speaker.name}</h3>
                   <p className="mb-2 text-sm text-purple-400">
                     {speaker.role}, {speaker.company}
@@ -137,10 +142,7 @@ export default function SpeakersPage() {
             </p>
             <Button
               className="mt-4 bg-white/10 text-white hover:bg-white/20"
-              onClick={() => {
-                setSearchQuery("");
-                setSelectedCategory("All");
-              }}
+              onClick={handleOnResetFilters}
             >
               Reset Filters
             </Button>

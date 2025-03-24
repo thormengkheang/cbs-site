@@ -83,7 +83,7 @@ export const Footer = () => {
               </Link>
             </div>
             <div className="text-gray-400">
-              <p>Contact: {siteConfig.email}</p>
+              <p>Contact: info@cambodiablockchain.com</p>
             </div>
           </div>
         </div>
