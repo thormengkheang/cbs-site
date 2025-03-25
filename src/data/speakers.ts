@@ -129,7 +129,7 @@ Passionate about freedom of expression, decentralization, and technology-driven 
   {
     id: 10,
     name: "Kanal",
-    role: "Content Creator",
+    role: "Influencer",
     company: "",
     image: "/img/speaker/oumkanal-chun.png",
     bio: `Oumkanal Chun is a Cambodian blockchain enthusiast, community builder, and entrepreneur. He is the Co-Founder of OmegaKH and the owner of Kanal-កាណាល Community. Kanal is also an educator in a leading blockchain academy and the former Country Manager of a global blockchain network.
