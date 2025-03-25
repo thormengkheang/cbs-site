@@ -45,7 +45,7 @@ export const speakers = [
     company: "Asia Euro University (AEU) ",
     image: "/img/speaker/thomas-schings.png",
     bio: `After working in the banking sector, Thomas now focuses on building and developing the securities sector in South East Asia and specifically Cambodia.
-          Global financials, digital assets, emerging markets, private investments and devil´s advocacy are his specialties. Employed by the Royal Group of Companies, Thomas is enabling projects to come to life; helping Royal Group and the Cambodian economy to enter the next stage of development. 
+          Global financials, digital assets, emerging markets, private investments and devil´s advocacy are his specialties. Employed by the Royal Group of Companies, Thomas is enabling projects to come to life; helping Royal Group and the Cambodian economy to enter the next stage of development.
           As the General Manager of the Securities & Trading Division, Thomas oversees the operations of Royal Group’s Fund Management Business as well as the Royal Group Exchange (RGX). Thomas is an expert on Cambodia’s financial market landscape and is also positioned on the forefront of blockchain development in Cambodia.
       `,
     // category: "Development",
@@ -122,7 +122,7 @@ Passionate about freedom of expression, decentralization, and technology-driven 
   {
     id: 10,
     name: "Kanal",
-    role: "",
+    role: "Content Creator",
     company: "",
     image: "/img/speaker/oumkanal-chun.png",
     bio: `Oumkanal Chun is a Cambodian blockchain enthusiast, community builder, and entrepreneur. He is the Co-Founder of OmegaKH and the owner of Kanal-កាណាល Community. Kanal is also an educator in a leading blockchain academy and the former Country Manager of a global blockchain network.
