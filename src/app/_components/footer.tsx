@@ -83,7 +83,15 @@ export const Footer = () => {
               </Link>
             </div>
             <div className="text-gray-400">
-              <p>Contact: info@cambodiablockchain.com</p>
+              <p>
+                Contact:{" "}
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  className="transition-colors hover:text-purple-400"
+                >
+                  {siteConfig.email}
+                </a>
+              </p>
             </div>
           </div>
         </div>
