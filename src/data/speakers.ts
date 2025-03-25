@@ -20,6 +20,13 @@ export const speakers = [
     image: "/img/speaker/sek-socheat.png",
     bio: `
     SEK Socheat is a seasoned IT consultant and entrepreneur with over 15 years of experience in Cambodia’s digital landscape. He has led various impactful projects including the Cambodian voter list website and customs valuation systems. Socheat holds a Ph.D. candidacy in Computer Applications with a research focus on AI and software security from Huazhong University of Science and Technology (HUST), China. His professional background includes senior governmental roles and significant contributions to digital transformation in Cambodia, with expertise spanning artificial intelligence - AI, IoTs, blockchain technology development and cybersecurity.
+    Key Career Experiences and Achievements:
+    • Developed and managed the official Cambodian voters list website, significantly enhancing transparency and public access.
+    • Served as Under Secretary of State at the Ministry of Posts and Telecommunications, overseeing national IT policies and telecommunications projects.
+    • Led development of the Customs Valuation Support System for the General Department of Customs and Excise of Cambodia, improving operational efficiency and data integrity.
+    • Held the position of Executive Director at Mindset Development Organization, driving organizational strategies to address educational challenges and growth mindset in Cambodia.
+    • Authored academic publications, including “Fingerprint Enhancement, Minutiae Extraction, and Matching Techniques,” in the Journal of Computer and Communications.
+    • Regularly invited as a guest speaker on technology-related topics across major Cambodian universities.
     `,
     // category: "DeFi",
     twitter: "#",
