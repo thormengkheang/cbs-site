@@ -1,15 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
-import {
-  platinumSponsors,
-  goldSponsors,
-  silverSponsors,
-  bronzeSponsors,
-  sponsorshipPackages,
-} from "@/data/sponsors";
+import { sponsorshipPackages } from "@/data/sponsors";
 import { PageHeader } from "../_components/page-header";
 import { Footer } from "../_components/footer";
 import siteConfig from "@/site.config";
@@ -32,7 +24,7 @@ export default function SponsorsPage() {
         </div>
 
         {/* Platinum Sponsors */}
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <h2 className="mb-6 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-center text-2xl font-bold text-transparent">
             Platinum Sponsors
           </h2>
@@ -58,10 +50,10 @@ export default function SponsorsPage() {
               </a>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Gold Sponsors */}
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <h2 className="mb-6 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-center text-2xl font-bold text-transparent">
             Gold Sponsors
           </h2>
@@ -87,10 +79,10 @@ export default function SponsorsPage() {
               </a>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Silver Sponsors */}
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <h2 className="mb-6 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-center text-2xl font-bold text-transparent">
             Silver Sponsors
           </h2>
@@ -116,10 +108,10 @@ export default function SponsorsPage() {
               </a>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Bronze Sponsors */}
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <h2 className="mb-6 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-center text-2xl font-bold text-transparent">
             Bronze Sponsors
           </h2>
@@ -145,7 +137,7 @@ export default function SponsorsPage() {
               </a>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Become a Sponsor */}
         <section className="mb-16 mt-20">

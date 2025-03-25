@@ -2,10 +2,9 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Download, ExternalLink, MapPin } from "lucide-react";
+import { Download } from "lucide-react";
 import { Footer } from "../_components/footer";
 import { PageHeader } from "../_components/page-header";
-import { exhibitors } from "@/data/exhibitors";
 
 export default function ExhibitorsPage() {
   return (
@@ -51,7 +50,7 @@ export default function ExhibitorsPage() {
         </section>
 
         {/* Exhibitors List */}
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <h2 className="mb-6 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-center text-2xl font-bold text-transparent">
             Our Exhibitors
           </h2>
@@ -96,7 +95,7 @@ export default function ExhibitorsPage() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Become an Exhibitor */}
         {/* <section className="mb-16 mt-20">

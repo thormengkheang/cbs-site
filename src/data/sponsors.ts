@@ -1,192 +1,108 @@
-export const platinumSponsors = [
+export const sponsors = [
   {
     id: 1,
-    name: "BlockTech Global",
-    image: "/placeholder.svg?height=120&width=240",
-    website: "#",
+    name: "RGX",
+    image: "/img/sponsor/rgx.png",
   },
   {
     id: 2,
-    name: "Crypto Innovations",
-    image: "/placeholder.svg?height=120&width=240",
-    website: "#",
+    name: "NUM",
+    image: "/img/sponsor/num.png",
   },
   {
     id: 3,
-    name: "DeFi Solutions",
-    image: "/placeholder.svg?height=120&width=240",
-    website: "#",
-  },
-];
-
-export const goldSponsors = [
-  {
-    id: 1,
-    name: "Chain Ventures",
-    image: "/placeholder.svg?height=100&width=200",
-    website: "#",
-  },
-  {
-    id: 2,
-    name: "Digital Asset Partners",
-    image: "/placeholder.svg?height=100&width=200",
-    website: "#",
-  },
-  {
-    id: 3,
-    name: "Blockchain Capital",
-    image: "/placeholder.svg?height=100&width=200",
-    website: "#",
+    name: "TSC",
+    image: "/img/sponsor/tsc.png",
   },
   {
     id: 4,
-    name: "Crypto Exchange",
-    image: "/placeholder.svg?height=100&width=200",
-    website: "#",
+    name: "Startup Cambodia",
+    image: "/img/sponsor/startup-cambodia.png",
   },
   {
     id: 5,
-    name: "Web3 Accelerator",
-    image: "/placeholder.svg?height=100&width=200",
-    website: "#",
+    name: "CamStartup",
+    image: "/img/sponsor/cambodia-startup.png",
   },
   {
     id: 6,
-    name: "Token Innovations",
-    image: "/placeholder.svg?height=100&width=200",
-    website: "#",
-  },
-];
-
-export const silverSponsors = [
-  {
-    id: 1,
-    name: "Blockchain Academy",
-    image: "/placeholder.svg?height=80&width=160",
-    website: "#",
-  },
-  {
-    id: 2,
-    name: "Crypto Media",
-    image: "/placeholder.svg?height=80&width=160",
-    website: "#",
-  },
-  {
-    id: 3,
-    name: "DeFi Protocol",
-    image: "/placeholder.svg?height=80&width=160",
-    website: "#",
-  },
-  {
-    id: 4,
-    name: "NFT Marketplace",
-    image: "/placeholder.svg?height=80&width=160",
-    website: "#",
-  },
-  {
-    id: 5,
-    name: "Smart Contract Auditors",
-    image: "/placeholder.svg?height=80&width=160",
-    website: "#",
-  },
-  {
-    id: 6,
-    name: "Blockchain Consultancy",
-    image: "/placeholder.svg?height=80&width=160",
-    website: "#",
+    name: "NICC",
+    image: "/img/sponsor/nicc.png",
   },
   {
     id: 7,
-    name: "Crypto Wallet",
-    image: "/placeholder.svg?height=80&width=160",
-    website: "#",
+    name: "JCI",
+    image: "/img/sponsor/jci.png",
   },
   {
     id: 8,
-    name: "Web3 Infrastructure",
-    image: "/placeholder.svg?height=80&width=160",
-    website: "#",
+    name: "CADT",
+    image: "/img/sponsor/cadt.png",
   },
   {
     id: 9,
-    name: "Blockchain Analytics",
-    image: "/placeholder.svg?height=80&width=160",
-    website: "#",
-  },
-];
-
-export const bronzeSponsors = [
-  {
-    id: 1,
-    name: "Startup Incubator",
-    image: "/placeholder.svg?height=60&width=120",
-    website: "#",
-  },
-  {
-    id: 2,
-    name: "Blockchain News",
-    image: "/placeholder.svg?height=60&width=120",
-    website: "#",
-  },
-  {
-    id: 3,
-    name: "Crypto Community",
-    image: "/placeholder.svg?height=60&width=120",
-    website: "#",
-  },
-  {
-    id: 4,
-    name: "Developer Tools",
-    image: "/placeholder.svg?height=60&width=120",
-    website: "#",
-  },
-  {
-    id: 5,
-    name: "Blockchain Education",
-    image: "/placeholder.svg?height=60&width=120",
-    website: "#",
-  },
-  {
-    id: 6,
-    name: "Crypto Events",
-    image: "/placeholder.svg?height=60&width=120",
-    website: "#",
-  },
-  {
-    id: 7,
-    name: "Web3 Jobs",
-    image: "/placeholder.svg?height=60&width=120",
-    website: "#",
-  },
-  {
-    id: 8,
-    name: "Blockchain Research",
-    image: "/placeholder.svg?height=60&width=120",
-    website: "#",
-  },
-  {
-    id: 9,
-    name: "Crypto Podcast",
-    image: "/placeholder.svg?height=60&width=120",
-    website: "#",
+    name: "Ai Farm",
+    image: "/img/sponsor/ai-farm.png",
   },
   {
     id: 10,
-    name: "NFT Artists Collective",
-    image: "/placeholder.svg?height=60&width=120",
-    website: "#",
+    name: "Rising Giants",
+    image: "/img/sponsor/rising-giants.png",
   },
   {
     id: 11,
-    name: "Blockchain Gaming",
-    image: "/placeholder.svg?height=60&width=120",
-    website: "#",
+    name: "BookMe+",
+    image: "/img/sponsor/bookme+.png",
   },
   {
     id: 12,
-    name: "Metaverse Platform",
-    image: "/placeholder.svg?height=60&width=120",
-    website: "#",
+    name: "Sala",
+    image: "/img/sponsor/sala.png",
+  },
+  {
+    id: 13,
+    name: "Selendra",
+    image: "/img/sponsor/selendra.png",
+  },
+  {
+    id: 14,
+    name: "Dichi Academy",
+    image: "/img/sponsor/dichi-academy.png",
+  },
+  {
+    id: 15,
+    name: "Dreamslab",
+    image: "/img/sponsor/dreamslab.png",
+  },
+  {
+    id: 16,
+    name: "OMOHUB",
+    image: "/img/sponsor/omohub.png",
+  },
+  {
+    id: 17,
+    name: "606",
+    image: "/img/sponsor/606.png",
+  },
+  {
+    id: 18,
+    name: "OKX",
+    image: "/img/sponsor/okx.png",
+  },
+  {
+    id: 19,
+    name: "BYBIT",
+    image: "/img/sponsor/bybit.png",
+  },
+  {
+    id: 20,
+    name: "Morokot",
+    image: "/img/sponsor/morokot-technology.png",
+  },
+  {
+    id: 21,
+    name: "CAMEX",
+    image: "/img/sponsor/camex.png",
   },
 ];
 
