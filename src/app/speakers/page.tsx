@@ -85,27 +85,25 @@ export default function SpeakersPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filteredSpeakers.map((speaker) => (
             <div key={speaker.id} className="group">
-              <div className="relative flex h-full flex-col overflow-hidden rounded-xl bg-white/5 p-5 transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(120,80,255,0.3)]">
-                <div className="relative z-10">
-                  <div className="mb-4 overflow-hidden rounded-lg">
+              <div className="relative flex h-[450px] flex-col overflow-hidden rounded-xl bg-white/5 p-5 transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(120,80,255,0.3)]">
+                <div className="relative z-10 flex h-full flex-col">
+                  <div className="mb-4 h-36 w-36 self-center rounded-full border-2 border-purple-500/30 transition-all duration-300 group-hover:border-purple-500/70">
                     <Image
-                      src={speaker.image || "/placeholder.svg"}
-                      alt={speaker.name}
-                      width={400}
-                      height={400}
-                      className="h-[200px] w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      src={speaker.image}
+                      alt={`Speaker ${speaker.name}`}
+                      width={144}
+                      height={144}
+                      className="h-full w-full rounded-full object-cover"
                     />
                   </div>
-                  {/* <div className="mb-2 inline-block rounded-full bg-purple-900/50 px-3 py-1 text-xs font-medium text-purple-300">
-                    {speaker.category}
-                  </div> */}
                   <h3 className="text-xl font-bold">{speaker.name}</h3>
                   <p className="mb-2 text-sm text-purple-400">
-                    {speaker.role}, {speaker.company}
+                    {speaker.role}
+                    {!!speaker.company && `, ${speaker.company}`}
                   </p>
-                  <p className="mb-4 flex-grow text-sm text-gray-400">
+                  <div className="scrollbar-thin scrollbar-thumb-purple-500 scrollbar-track-transparent mb-4 flex-grow overflow-y-auto pr-1 text-sm text-gray-400">
                     {speaker.bio}
-                  </p>
+                  </div>
                   <div className="mt-auto flex space-x-3 pt-2">
                     <a
                       href={speaker.twitter}
