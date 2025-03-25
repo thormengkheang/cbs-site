@@ -22,7 +22,7 @@ export const sponsors = [
   {
     id: 5,
     name: "CamStartup",
-    image: "/img/sponsor/camstartup.png",
+    image: "/img/sponsor/cambodia-startup.png",
   },
   {
     id: 6,
@@ -97,7 +97,7 @@ export const sponsors = [
   {
     id: 20,
     name: "Morokot",
-    image: "/img/sponsor/morokot.png",
+    image: "/img/sponsor/morokot-technology.png",
   },
   {
     id: 21,
