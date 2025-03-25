@@ -35,13 +35,15 @@ export const Speakers = ({ ref }: { ref: Ref<HTMLElement> }) => {
                 </div>
                 <h3 className="mb-1 text-xl font-bold">{item.name}</h3>
                 <p className="mb-2 text-sm text-purple-400">
-                  {item.role} {!!item.company && `, ${item.company}`}
+                  {item.role}
+                  {!!item.company && `, ${item.company}`}
                 </p>
                 <div className="absolute inset-0 flex items-center justify-center rounded-xl bg-gradient-to-b from-purple-900/90 to-black/95 p-6 opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
                   <div className="max-h-full overflow-y-auto">
                     <h3 className="mb-2 text-xl font-bold">{item.name}</h3>
                     <p className="mb-3 text-sm text-purple-300">
-                      {item.role} {!!item.company && `, ${item.company}`}
+                      {item.role}
+                      {!!item.company && `, ${item.company}`}
                     </p>
                     <p className="whitespace-pre-line text-sm leading-relaxed text-gray-200">
                       {item.bio}
