@@ -32,6 +32,11 @@ export const Teams = ({ ref }: { ref?: Ref<HTMLElement> }) => {
               <h3 className="text-center text-lg font-bold transition-colors duration-300 group-hover:text-white">
                 {member.name}
               </h3>
+              {!!member.department && (
+                <p className="mt-1 text-center text-sm text-purple-400">
+                  {member.department}
+                </p>
+              )}
               <p className="mt-1 text-center text-sm text-purple-400">
                 {member.role}
               </p>
