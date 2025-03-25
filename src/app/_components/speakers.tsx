@@ -21,7 +21,7 @@ export const Speakers = ({ ref }: { ref: Ref<HTMLElement> }) => {
           {speakers.map((item) => (
             <div
               key={item.id}
-              className="group rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-purple-500/50 hover:shadow-[0_0_15px_rgba(120,80,255,0.3)]"
+              className="group relative rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-purple-500/50 hover:shadow-[0_0_15px_rgba(120,80,255,0.3)]"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="mb-4 h-24 w-24 overflow-hidden rounded-full border-2 border-purple-500/30 transition-all duration-300 group-hover:border-purple-500/70">
@@ -37,10 +37,17 @@ export const Speakers = ({ ref }: { ref: Ref<HTMLElement> }) => {
                 <p className="mb-2 text-sm text-purple-400">
                   {item.role} {!!item.company && `, ${item.company}`}
                 </p>
-                <p className="text-sm text-gray-400">
-                  Expert in blockchain technology with over 10 years of
-                  experience in the industry.
-                </p>
+                <div className="absolute inset-0 flex items-center justify-center rounded-xl bg-gradient-to-b from-purple-900/90 to-black/95 p-6 opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
+                  <div className="max-h-full overflow-y-auto">
+                    <h3 className="mb-2 text-xl font-bold">{item.name}</h3>
+                    <p className="mb-3 text-sm text-purple-300">
+                      {item.role} {!!item.company && `, ${item.company}`}
+                    </p>
+                    <p className="whitespace-pre-line text-sm leading-relaxed text-gray-200">
+                      {item.bio}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
