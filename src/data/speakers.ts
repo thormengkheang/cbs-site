@@ -3,7 +3,8 @@ export const speakers = [
     id: 1,
     name: "Daiju Aiba",
     role: "JICA Adviser",
-    company: "National Bank of Cambodia/ Japan International Cooperation Agency",
+    company:
+      "National Bank of Cambodia/ Japan International Cooperation Agency",
     image: "/img/speaker/daiju-aiba.png",
     bio: "Daiju Aiba is currently a resident advisor at National Bank of Cambodia for the “Project for Enhancing Capacity of Economic Analysis and Operations for Monetary Policy in The Kingdom of Cambodia”, a technical cooperation project initiated by Japan International Cooperation Agency (JICA). He was formerly an assistant professor at the Faculty of Commerce of Waseda University and a research fellow at JICA Ogata Sadako Research Institute for Peace and Development. He holds a Ph.D. in Economics from Hitotsubashi University, which he obtained in 2017. His research interests include development economics and financial economics, with a focus on dollarization and financial inclusion in Cambodia. He has published his work in reputable academic journals, such as Journal of Asian Economics, Asian Economic Review, Empirical Economics, and Singapore Economic Review.",
     // category: "Strategy",
