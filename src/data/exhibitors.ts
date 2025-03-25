@@ -7,7 +7,7 @@ export const mediaPartners = [
   {
     id: 2,
     name: "CC Times",
-    image: "/img/partner/cc-time.png",
+    image: "/img/partner/cc-times.png",
   },
   {
     id: 3,
@@ -27,12 +27,12 @@ export const mediaPartners = [
   {
     id: 6,
     name: "BizKhmer",
-    image: "/img/partner/bizkhmer.png",
+    image: "/img/partner/biz-khmer.png",
   },
   {
     id: 7,
     name: "DAP News",
-    image: "/img/partner/dap-new.png",
+    image: "/img/partner/dap-news.png",
   },
   {
     id: 8,
@@ -45,66 +45,66 @@ export const exhibitors = [
   {
     id: 1,
     name: "ACTIK",
-    image: "/img/exhibitor/actik.png",
+    image: "/img/partner/ac-tik.png",
   },
   {
     id: 2,
     name: "AURA",
-    image: "/img/exhibitor/aura.png",
+    image: "/img/partner/aura.png",
   },
   {
     id: 3,
     name: "COTA",
-    image: "/img/exhibitor/cota.png",
+    image: "/img/partner/cota.png",
   },
   {
     id: 4,
     name: "CRAFT-I",
-    image: "/img/exhibitor/craft-i.png",
+    image: "/img/partner/craft-i.png",
   },
   {
     id: 5,
     name: "DITY",
-    image: "/img/exhibitor/dity.png",
+    image: "/img/partner/dity.png",
   },
   {
     id: 6,
     name: "LAVA",
-    image: "/img/exhibitor/lava.png",
+    image: "/img/partner/lava.png",
   },
   {
     id: 7,
     name: "MELOZIC",
-    image: "/img/exhibitor/melozic.png",
+    image: "/img/partner/melozic.png",
   },
   {
     id: 8,
     name: "TRASH CLEANING INCENTIVE",
-    image: "/img/exhibitor/tci.png",
+    image: "/img/partner/tci.png",
   },
   {
     id: 9,
     name: "NFT BASED ID",
-    image: "/img/exhibitor/nft-based-id.png",
+    image: "/img/partner/nft-based-id.png",
   },
   {
     id: 10,
     name: "PASSIFY",
-    image: "/img/exhibitor/passify.png",
+    image: "/img/partner/passify.png",
   },
   {
     id: 11,
     name: "PLUS SKILL",
-    image: "/img/exhibitor/plus-skill.png",
+    image: "/img/partner/plus-skill.png",
   },
   {
     id: 12,
     name: "SROK YEUNG",
-    image: "/img/exhibitor/srok-yeung.png",
+    image: "/img/partner/srok-yeung.png",
   },
   {
     id: 13,
     name: "T-RENTAL",
-    image: "/img/exhibitor/t-rental.png",
+    image: "/img/partner/t-rental.png",
   },
 ];
