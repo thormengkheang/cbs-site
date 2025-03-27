@@ -7,6 +7,21 @@ import { Footer } from "../_components/footer";
 import { PageHeader } from "../_components/page-header";
 
 export default function ExhibitorsPage() {
+  const handleDownloadFloorPlan = () => {
+    // Create a link element
+    const link = document.createElement("a");
+    // Set the href to the image path
+    link.href = "/img/floor-plan.png";
+    // Set the download attribute to specify the filename
+    link.download = "CBS-2025-Floor-Plan.png";
+    // Append to the body
+    document.body.appendChild(link);
+    // Trigger the download
+    link.click();
+    // Clean up - remove the link from the document
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-950 to-gray-900 text-white">
       {/* Header */}
@@ -32,7 +47,7 @@ export default function ExhibitorsPage() {
             <div className="relative mb-6 aspect-video overflow-hidden rounded-lg bg-gray-800/50">
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=600&width=1000"
+                  src="/img/floor-plan.png"
                   alt="Exhibition Floor Plan"
                   width={1000}
                   height={600}
@@ -40,7 +55,10 @@ export default function ExhibitorsPage() {
                 />
               </div>
             </div>
-            <div className="flex justify-center">
+            <div
+              className="flex justify-center"
+              onClick={handleDownloadFloorPlan}
+            >
               <Button className="bg-white/10 text-white hover:bg-white/20">
                 <Download className="mr-2 h-4 w-4" />
                 Download Floor Plan
