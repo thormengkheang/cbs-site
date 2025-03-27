@@ -63,14 +63,12 @@ export const speakers = [
   {
     id: 5,
     name: "Luis Filipe Goncalves Arieira",
-    role: "Part-Time Lecturer",
-    company: "University of Puthisastra (UP)",
+    role: "Professor",
+    company: "AUPP and NUMIC",
     image: "/img/speaker/luis-filipe.png",
     bio: `Luis Arieira is a seasoned marketing, digital marketing, and communications professional based in Phnom Penh, Cambodia. He recently completed a postdoctoral degree focused on the applications of blockchain technology in marketing for public and private entities, with his research now serving as a global academic reference. His doctoral work explores blockchain's transformative potential in enhancing advertising transparency, building secure loyalty programs, and creating decentralized brand ecosystems.
-
-        With over 15 years of experience living and working in Cambodia, Luis possesses a deep understanding of the local market and its digital evolution. He also brings over 25 years of international industry experience as an award-winning advertising creative director and digital marketing specialist, having developed successful strategies across diverse industries and continents.
-
-        Luis is committed to education, sharing his expertise as a part-time teacher at AUPP and NUM (Faculty of Digital Economy), instructing courses on digital marketing, management, and blockchain applications to business. His expertise spans marketing, digital marketing, business development, and, most recently, blockchain technology.`,
+    With over 15 years of experience living and working in Cambodia, Luis possesses a deep understanding of the local market and its digital evolution. He also brings over 25 years of international industry experience as an award-winning advertising creative director and digital marketing specialist, having developed successful strategies across diverse industries and continents.
+    Luis is committed to education, sharing his expertise as a part-time teacher at AUPP and NUM (Faculty of Digital Economy), instructing courses on digital marketing, management, and blockchain applications to business. His expertise spans marketing.`,
     // category: "Governance",
     twitter: "#",
     linkedin: "#",
@@ -80,7 +78,7 @@ export const speakers = [
     id: 6,
     name: "Yim Akthichetha",
     role: "Executive Director/ Co-Founder/COO",
-    company: "Mindset Development Organization (MDO)/ Polymer Invoice",
+    company: "Mindset Development Organization (MDO)/ COO and CO founder Polymer Invoice",
     image: "/img/speaker/yim-akthichetha.png",
     bio: "Chetha A. Yim is a Cambodian entrepreneur and startup leader, co-founder & COO of Polymer Invoice, Managing Director of AO & Partners, President of CAKOSA, and General Secretariat of CamStartup. His works are mostly focus on sales, marketing, and business growth while also engaging in government roles and charitable projects.",
     // category: "NFTs",
@@ -94,8 +92,8 @@ export const speakers = [
     role: "Under Secretary of State",
     company: "Ministry of Posts and Telecommunications, Cambodia (MPTC)",
     image: "/img/speaker/ley.png",
-    bio: "Founders of Personstage, a private community of creators and builders in Web3. Passionate about education, empowers individuals with knowledge of NFTs and cryptocurrencies.",
-    // category: "Social Impact",
+    bio:`Ley is a content creator on X and the co-founder of Personstage  a private community for creators and builders in the Web3 space.
+      With a strong passion for education, his dedicated to empowering individuals through knowledge of NFTs and cryptocurrencies.`, // category: "Social Impact",
     twitter: "#",
     linkedin: "#",
     website: "#",
@@ -106,7 +104,8 @@ export const speakers = [
     role: "National Consultant for Customs Valuation Support Systemat",
     company: "General Department of Customs and Excise of Cambodiain ",
     image: "/img/speaker/kris.png",
-    bio: "Founders of Personstage, a private community of creators and builders in Web3. Passionate about education, empowers individuals with knowledge of NFTs and cryptocurrencies.",
+    bio: `He joined web3 in late 2021. Coming from just a boy seeking for opportunities.
+    Moving forward, He found PERSONSTAGE, small community that we create to share our knowledge not just NFT, tips to get remote jobs and everything that we have been learning from the web3 space to our Khmer people that are interested.`,
     // category: "Regulation",
     twitter: "#",
     linkedin: "#",
@@ -129,8 +128,8 @@ Passionate about freedom of expression, decentralization, and technology-driven 
   {
     id: 10,
     name: "Kanal",
-    role: "Influencer",
-    company: "",
+    role: "Co-Founder",
+    company: "OmegaKH",
     image: "/img/speaker/oumkanal-chun.png",
     bio: `Oumkanal Chun is a Cambodian blockchain enthusiast, community builder, and entrepreneur. He is the Co-Founder of OmegaKH and the owner of Kanal-កាណាល Community. Kanal is also an educator in a leading blockchain academy and the former Country Manager of a global blockchain network.
 
@@ -181,8 +180,8 @@ Sophorth participated in the 2017 Startupbootcamp FinTech accelerator, which sig
   {
     id: 14,
     name: "Saing Sab",
-    role: "",
-    company: "",
+    role: " Head of Blockchain",
+    company: "IG Tech Group",
     image: "/img/speaker/saing-sab.png",
     bio: `"Saing Sab is a Cambodian software engineer and blockchain advocate. He is the Head of Blockchain at IG Tech Group and former Co-founder and CTO one of Cambodain Blockchain network.
 
@@ -204,6 +203,30 @@ Saing uses tech to solve real-world problems. He believes blockchain can revolut
     linkedin: "#",
     website: "#",
   },
+  {
+    id: 16,
+    name: "B. Nearirath",
+    role: "Partner and Co-Head of the Banking, Finance, and Technology Practice",
+    company:"DFDL",
+    image: "/img/speaker/b-nearirath.png",
+    bio: `" Nearirath is Partner and Co-Head of the Banking, Finance, and Technology Practice at DFDL’s Phnom Penh office. With 16 years of legal experience, she has previously served as in-house legal counsel at various financial institutions and law firms, including Tilleke and Gibbins and Kelvin Chia Partnership.
+Throughout her career, Nearirath has advised international and national banks, financial institutions, capital markets intermediaries, insurance companies, fintech firms, e-commerce, and telecommunications companies on regulatory compliance. She specializes in financial services and technology, with expertise in payment gateways, e-wallets, digitalization, tokenization, cloud, and satellite services. Known for her innovative approach to complex issues, she works closely with clients to develop tailored solutions.
+Nearirath has contributed to the drafting of e-commerce, secured transactions, and consumer protection regulations. She holds bachelor’s degrees in law and psychology, and a master’s in law from the University of Hong Kong with a focus on international law, corporate law, and human rights law. "`,
+twitter: "#",
+linkedin: "#",
+website: "#",
+},
+{
+  id: 17,
+  name: "Anthony Morreale",
+  role: "Portfolio manager ",
+  company:"Flee USD investments",
+  image: "/img/speaker/anthony-morreale.png",
+  bio: `Anthony is a portfolio manager at a small liquid crypto hedge fund with 20 years of experience in traditional finance, BD, and communications. Outside of running the fund, Anthony hosts DeFi workshops and publishes articles to make crypto understandable for everyone.`,
+  twitter: "#",
+  linkedin: "#",
+  website: "#",
+},
 ];
 
 // export const categories = [
