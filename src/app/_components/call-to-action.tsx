@@ -11,13 +11,28 @@ export const CallToAction = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
+  const [isExpired, setIsExpired] = useState(false);
 
   useEffect(() => {
     const target = new Date("2025-03-30 08:00:00");
+    const now = new Date();
+
+    // Check if current date is after target date
+    if (now >= target) {
+      setIsExpired(true);
+      return;
+    }
 
     const interval = setInterval(() => {
       const now = new Date();
       const difference = target.getTime() - now.getTime();
+
+      // If the countdown has expired during runtime
+      if (difference < 0) {
+        setIsExpired(true);
+        clearInterval(interval);
+        return;
+      }
 
       const d = Math.floor(difference / (1000 * 60 * 60 * 24));
       setDays(d);
@@ -36,6 +51,11 @@ export const CallToAction = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  // Return null if the event date has passed
+  if (isExpired) {
+    return null;
+  }
 
   return (
     <section className="relative py-20">
