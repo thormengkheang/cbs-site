@@ -78,7 +78,8 @@ export const speakers = [
     id: 6,
     name: "Yim Akthichetha",
     role: "Executive Director/ Co-Founder/COO",
-    company: "Mindset Development Organization (MDO)/ COO and CO founder Polymer Invoice",
+    company:
+      "Mindset Development Organization (MDO)/ COO and CO founder Polymer Invoice",
     image: "/img/speaker/yim-akthichetha.png",
     bio: "Chetha A. Yim is a Cambodian entrepreneur and startup leader, co-founder & COO of Polymer Invoice, Managing Director of AO & Partners, President of CAKOSA, and General Secretariat of CamStartup. His works are mostly focus on sales, marketing, and business growth while also engaging in government roles and charitable projects.",
     // category: "NFTs",
@@ -92,7 +93,7 @@ export const speakers = [
     role: "Under Secretary of State",
     company: "Ministry of Posts and Telecommunications, Cambodia (MPTC)",
     image: "/img/speaker/ley.png",
-    bio:`Ley is a content creator on X and the co-founder of Personstage  a private community for creators and builders in the Web3 space.
+    bio: `Ley is a content creator on X and the co-founder of Personstage  a private community for creators and builders in the Web3 space.
       With a strong passion for education, his dedicated to empowering individuals through knowledge of NFTs and cryptocurrencies.`, // category: "Social Impact",
     twitter: "#",
     linkedin: "#",
@@ -207,26 +208,26 @@ Saing uses tech to solve real-world problems. He believes blockchain can revolut
     id: 16,
     name: "B. Nearirath",
     role: "Partner and Co-Head of the Banking, Finance, and Technology Practice",
-    company:"DFDL",
+    company: "DFDL",
     image: "/img/speaker/b-nearirath.png",
     bio: `" Nearirath is Partner and Co-Head of the Banking, Finance, and Technology Practice at DFDL’s Phnom Penh office. With 16 years of legal experience, she has previously served as in-house legal counsel at various financial institutions and law firms, including Tilleke and Gibbins and Kelvin Chia Partnership.
 Throughout her career, Nearirath has advised international and national banks, financial institutions, capital markets intermediaries, insurance companies, fintech firms, e-commerce, and telecommunications companies on regulatory compliance. She specializes in financial services and technology, with expertise in payment gateways, e-wallets, digitalization, tokenization, cloud, and satellite services. Known for her innovative approach to complex issues, she works closely with clients to develop tailored solutions.
 Nearirath has contributed to the drafting of e-commerce, secured transactions, and consumer protection regulations. She holds bachelor’s degrees in law and psychology, and a master’s in law from the University of Hong Kong with a focus on international law, corporate law, and human rights law. "`,
-twitter: "#",
-linkedin: "#",
-website: "#",
-},
-{
-  id: 17,
-  name: "Anthony Morreale",
-  role: "Portfolio manager ",
-  company:"Flee USD investments",
-  image: "/img/speaker/anthony-morreale.png",
-  bio: `Anthony is a portfolio manager at a small liquid crypto hedge fund with 20 years of experience in traditional finance, BD, and communications. Outside of running the fund, Anthony hosts DeFi workshops and publishes articles to make crypto understandable for everyone.`,
-  twitter: "#",
-  linkedin: "#",
-  website: "#",
-},
+    twitter: "#",
+    linkedin: "#",
+    website: "#",
+  },
+  {
+    id: 17,
+    name: "Anthony Morreale",
+    role: "Portfolio manager ",
+    company: "Flee USD investments",
+    image: "/img/speaker/anthony-morreale.png",
+    bio: `Anthony is a portfolio manager at a small liquid crypto hedge fund with 20 years of experience in traditional finance, BD, and communications. Outside of running the fund, Anthony hosts DeFi workshops and publishes articles to make crypto understandable for everyone.`,
+    twitter: "#",
+    linkedin: "#",
+    website: "#",
+  },
 ];
 
 // export const categories = [
