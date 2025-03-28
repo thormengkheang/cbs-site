@@ -43,11 +43,12 @@ export const Agenda = ({ ref }: { ref: Ref<HTMLElement> }) => {
                         </div>
                         <div>
                           <p className="font-medium">{item.title}</p>
-                          {!!item.remarks && (
-                            <p className="text-sm text-gray-400">
-                              {item.remarks.join(", ")}
-                            </p>
-                          )}
+                          {!!item.remarks &&
+                            item.remarks.map((remark, i) => (
+                              <p key={i} className="text-sm text-gray-400">
+                                {remark}
+                              </p>
+                            ))}
                         </div>
                       </div>
                     );
@@ -72,11 +73,12 @@ export const Agenda = ({ ref }: { ref: Ref<HTMLElement> }) => {
                         </div>
                         <div>
                           <p className="font-medium">{item.title}</p>
-                          {!!item.remarks && (
-                            <p className="text-sm text-gray-400">
-                              {item.remarks.join(", ")}
-                            </p>
-                          )}
+                          {!!item.remarks &&
+                            item.remarks.map((remark, i) => (
+                              <p key={i} className="text-sm text-gray-400">
+                                {remark}
+                              </p>
+                            ))}
                         </div>
                       </div>
                     );
