@@ -39,7 +39,7 @@ export const agendasMorning = [
     title: "Panel Discussion 1: Roles of Blockchain in Cambodia’s Economy",
     remarks: [
       "Dr. Daiju Aiba (National Bank of Cambodia)",
-      "Sei Socheat (NUM Faculty of Digital Economy)",
+      "Sek Socheat (NUM Faculty of Digital Economy)",
       "Serey Vathana Tum (Techo Startup Center)",
       "Sreng Neariroth (DFDL)",
       "Chhay Lem Lim (Serey Platform)",
