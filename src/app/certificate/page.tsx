@@ -44,7 +44,7 @@ export default function CertificatePage() {
             <iframe
               src={url}
               width="100%"
-              height="900px"
+              height="600px"
               style={{ border: "none" }}
               title="Certificate Generator"
               className="rounded-lg"
